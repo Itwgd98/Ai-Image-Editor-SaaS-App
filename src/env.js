@@ -11,7 +11,7 @@ export const env = createEnv({
     BETTER_AUTH_SECRET: z.string(),
     BETTER_AUTH_URL: z.string().url(),
     POLAR_ACCESS_TOKEN: z.string(),
-    POLAR_WEBHOOK_SECRET: z.string(),
+    POLAR_WEBHOOK_SECRET: z.string().optional(),
     IMAGEKIT_PRIVATE_KEY: z.string(),
     IMAGEKIT_URL_ENDPOINT: z.string().url(),
     IMAGEKIT_PUBLIC_KEY: z.string(),
