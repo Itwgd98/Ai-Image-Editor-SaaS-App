@@ -23,6 +23,8 @@ model User {
   sessions      Session[]
   accounts      Account[]
   projects      Project[]
+  credits       Int       @default(10)
+
 
   @@unique([email])
   @@map("user")
